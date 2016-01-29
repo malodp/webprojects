@@ -196,35 +196,20 @@ function validateContact() {
          <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-	      <li data-target="#myCarousel" data-slide-to="3"></li>
+	      
          </ol>
 
        <!-- Wrapper for slides -->
          <div class="carousel-inner" role="listbox">
           <div class="item active">
-           <img src="images/shop.jpg" alt="Shop Group Image" height="300px" width="360px">
-           <div class="carousel-caption">
-            <h3>Bhavani Workforce</h3>
-            <p>Our pillars have done great job to make this business a huge success</p>
-           </div> 
-          </div>
-
-          <div class="item">
            <img src="images/homeImage.jpg" alt="shop image" height="300px" width="360px">
             <div class="carousel-caption">
              <br><h3>Bhavani Outlet</h3>
-             <p>We have different departments to deal each category of products</p>
+             <p>We have different departments to deal each category of products.</p>
             </div> 
           </div>
 
-	      <div class="item">
-            <img src="images/shop2.jpg" alt="shop image" height="300px" width="360px">
-             <div class="carousel-caption">
-             <br><h3>Bhavani Services</h3>
-             <p>We have our own transportation service for on time delivery </p>
-             </div> 
-          </div>
+	      
          <div class="item">
            <img src="images/homephoto.jpg" alt="shop image" height="300px" width="360px">
             <div class="carousel-caption">
