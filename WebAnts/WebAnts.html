@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WebSite Design Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+    
+  <style>
+  html {
+		
+		height: 100%;
+		color:orange;
+	}
+body{
+    
+	height: 100%;
+	color:orange;
+	
+}
+.carousel,.item,.active {
+  
+		height: 100%;
+		}
+
+.carousel-inner {
+      height: 100%;
+	}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    	width: 100%;
+    
+ 		height: 100%;
+   
+		background-position: center;
+   
+		-webkit-background-size: cover;
+    
+		-moz-background-size: cover;
+    
+		background-size: cover;
+    
+		-o-background-size: cover;
+}
+
+
+
+footer {
+    margin: 50px 0;
+}
+        
+   .sideIcon {
+	   position:fixed; 
+	   left:97%; 
+	   padding-top: 210px;
+	   width: 36px;
+	   color:orange;
+       bottom:250px;
+       }
+   .footer1 {
+	   background-color:black;
+       bottom: 0;
+       right: 0;
+       width: 100%;
+       border: 2px outset orange;
+    }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0px;
+  }
+  .thumbnail img {
+      width: 100%;
+      
+      margin-bottom: 10px;
+  }
+  
+  img.resize{
+	 height:180px; 
+  }
+    .navbar {
+      margin-bottom: 0;
+      background-color: orange;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 1px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  
+ 
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: white !important;
+      background-color: #336699 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }  
+.panel {
+     background-color:FFCC66;
+}  
+  .modal-header, h4, .close {
+      background-color: orange;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  
+ .btn-login{
+	  background-color: orange;
+	  }
+  .div1{ 
+	  
+	  position:fixed;
+	  width:100px;
+	  height:40px;
+	  left:95%;
+	  bottom:100px;
+	  padding-top:0px;
+	  }
+  .sideIcon {
+	   position:fixed; 
+	   left:90%; 
+	   padding-top: 210px;
+	   width: 36px;
+	   color:orange;
+       bottom:250px;
+	   background-color:orange;
+	   border:2px solid white;
+       }
+   div#myDiv {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg); /* Standard syntax */
+}
+   .btn-contact{
+        background-color:orange;
+		}
+ </style>
+</head>
+
+
+<body>
+
+
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div  class="navbar-header">
+      <a class="navbar-brand" href="#">www.WebAnts.com</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a data-toggle="modal" href="#SignUpForm">SignUp</a></li>
+	  <li><a data-toggle="modal" href="#LoginForm"> Login</a></li>
+
+  <!-- popup signup Form -->
+  
+   <div class="modal fade" id="SignUpForm" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> SignUp</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="firstname"><span class="glyphicon glyphicon-user"></span> Firstname</label>
+              <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+            </div>
+			<div class="form-group">
+              <label for="lastname"><span class="glyphicon glyphicon-user"></span> Lastname</label>
+              <input type="text" class="form-control" id="lastname" placeholder="Lastname">
+            </div>
+			<div class="form-group">
+              <label for="email"><span class="glyphicon glyphicon-user"></span> Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+			 <div class="form-group">
+              <label for="repsw"><span class="glyphicon glyphicon-eye-open"></span>Re-enter Password</label>
+              <input type="text" class="form-control" id="repsw" placeholder="Re-enter password">
+            </div>
+            
+              <button type="submit" class="btn btn-success btn-block  btn-login"><span class="glyphicon glyphicon-off"></span> SignUp</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+         
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+   
+   
+<!-- popup LoginForm -->
+  
+  <div class="modal fade" id="LoginForm" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block  btn-login"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#SignUpForm">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+      
+    </ul>
+  </div>
+</nav>
+ <!-- Full Page Image Background Carousel Header -->
+<header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/BG2.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Pioneers in Web Designing</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/BG3.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Build an E-Commerce Website</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/BG4.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Creative Web Designers and Trend Setters</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>  -->
+
+ </header>
+ 
+ 
+ <!-- Page Content -->
+<br><br><br>
+ <div class="container-fluid fill" style="background-image:url('images/BG1.jpg');background-repeat: no-repeat;">
+  <h2>Welcome to WebAnts Web designing Company</h2><br>
+  <div class="container">
+ 
+   <div class="panel-group">
+     <div class="panel panel-default">
+       <ul class="nav nav-tabs">
+         <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+         <li><a data-toggle="tab" href="#menu1">Products</a></li>
+         <li><a data-toggle="tab" href="#menu2">Services</a></li>
+		 <li><a data-toggle="tab" href="#menu2">BloG</a></li>
+         <li><a data-toggle="tab" href="#menu3">Contact US</a></li>
+       </ul>
+
+      <div class="tab-content">
+         <div id="home" class="tab-pane fade in active">
+          <h3>HOME</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+         <div id="menu1" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+         <div id="menu2" class="tab-pane fade">
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+         <div id="menu3" class="tab-pane fade">
+           <h3>Menu 3</h3>
+           <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         </div>
+      </div>
+     </div>
+   </div>
+  </div>
+  <br><br><br><br><br><br><br><br>
+  
+  
+  
+		 
+  <!-- Container for Theme Image Gallery  -->
+  
+  <div  id="Gallery" class="container-fluid text-center"  style="background-color:orange;border:2px solid white">
+  <h4>Themes Image Gallery</h4><br>
+  <br>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="thumbnail bg-1">
+        <img class="resize" src="images/G1.jpg"   alt="Products Gallery">
+        <p><strong>Themes</strong></p>
+      </div>
+    </div>
+	<div class="col-sm-2">
+      <div class="thumbnail bg-1">
+       <img class="resize" src="images/G2.jpg"   alt="Products Gallery" >
+        <p><strong>Themes</strong></p> 
+      </div>
+    </div>
+	<div class="col-sm-2">
+      <div class="thumbnail bg-1">
+        <img class="resize" src="images/G3.jpg" alt="Products Gallery">
+        <p><strong>Themes</strong></p>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="thumbnail bg-1">
+        <img class="resize" src="images/G4.jpg" alt="Products Gallery" >
+        <p><strong>Themes</strong></p>
+      </div>
+    </div>
+	<div class="col-sm-2">
+      <div class="thumbnail bg-1">
+        <img  class="resize" src="images/G5.png"  alt="Products Gallery">
+        <p><strong>Themes</strong></p>
+      </div>
+    </div>
+	<div class="col-sm-1">
+      <div class="thumbnail bg-1">
+       <img class="resize"  src="images/G6.jpg"  alt="Products Gallery" >
+        <p><strong>Themes</strong></p> 
+      </div>
+    </div>  
+  </div> 
+ </div>
+ <div >
+ 
+  </div>
+ <!-- Container for Footer  -->
+ <footer class="container-fluid footer1 text-center">
+     
+  <br>
+  <a href="http://www.facebook.com" title="Visit Facebook"><img src="images/icon-facebook.jpg" alt="Visit Facebook" height="30px" width="30px"></a>
+  <a href="http://www.twitter.com" title="Visit Twitter"><img src="images/icon-twitter.jpg" alt="Visit Twitter" height="30px" width="30px"></a>
+  <a href="http://www.youtube.com" title="Visit Youtube"><img src="images/icon-youtube.jpg" alt="Visit Youtube" height="30px" width="30px"></a>
+  <a href="http://www.gmail.com" title="Visit Gmail"><img src="images/icon-gmail.jpg" alt="Visit Gmail" height="30px" width="30px"></a>
+  <a href="http://www.google.co.in" title="Visit Google"><img src="images/icon-google.jpg" alt="Visit Google" height="30px" width="30px"></a>
+  <br><br>
+  <p>Theme Made By priyanka Malode  <a href="http://www.webants.com" title="Visit Webants Website">www.webants.com</a></p>
+ 
+
+</footer>
+
+<div>
+  <div id="myDiv" class="div1">
+   <button type="button" class="btn btn-default btn-md btn-contact" data-toggle="modal" data-target="#contactForm">Contact Us</button>
+  </div>
+    <div class="modal fade" id="contactForm" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Contact Form</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="name"><span class="glyphicon glyphicon-user"></span> Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+			
+			<div class="form-group">
+              <label for="email"><span class="glyphicon glyphicon-user"></span> Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Email">
+            </div>
+                        
+              <button type="submit" class="btn btn-success btn-block  btn-login"><span class="glyphicon glyphicon-off"></span> Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+         
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+ 
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+<!-- /.container -->
+
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+</body>
+</html>
